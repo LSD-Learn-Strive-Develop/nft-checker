@@ -1,4 +1,4 @@
 # nft-checker
 
-npm install \\
+npm install\
 npm run dev

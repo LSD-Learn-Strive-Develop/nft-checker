@@ -1,0 +1,3 @@
+# nft-checker
+
+npm install

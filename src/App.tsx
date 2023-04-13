@@ -44,7 +44,7 @@ function App() {
           Increment
         </a>
       </div>
-      <div style={{ height: "auto", margin: "0 auto", maxWidth: 256, width: "100%" }}>
+      <div style={{ height: "auto", margin: "0 auto", maxWidth: 512 }}>
         {/* <QRCode
           level='L'
           size={256}
@@ -52,7 +52,8 @@ function App() {
           value={'ton://transfer/kQDqJG6k6IAnvM612LgVKSBbtxgIZrG8iKV3PIsVXujv3OLr'}
           viewBox={`0 0 256 256`}
         /> */}
-        <QRNormal
+        <div style={{ background: "white", borderRadius: "15%" }}>
+          <QRNormal
                 value="ton://transfer/kQDqJG6k6IAnvM612LgVKSBbtxgIZrG8iKV3PIsVXujv3OLr?amount=10000000&text=testnet"
                 className="my-qrcode"
                 styles={{ svg: {height: "auto", width: "100%"} }}
@@ -63,8 +64,11 @@ function App() {
                 // otherColor="#33CCCC"
                 posColor="#0A98FC"
             />
-
-            
+        </div>
+      
+        <div>
+          <img src='check.png' alt=''/>
+        </div>
       </div>
     </div>
   );
